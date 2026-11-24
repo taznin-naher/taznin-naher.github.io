@@ -3,42 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Taznin Naher | Hydrologist</title>
-<meta name="description" content="Taznin Naher is a hydrologist and water resources researcher working on estuarine tidal change, coastal climate risk, and water management.">
+<title>Taznin Naher | Water, Land &amp; Livelihoods</title>
+<meta name="description" content="Taznin Naher: researcher in remote sensing, agricultural extension and livelihood assessment. Seeking PhD positions and research roles.">
+<meta property="og:title" content="Taznin Naher | Water, Land & Livelihoods">
+<meta property="og:description" content="Remote sensing, agricultural extension and livelihood research. Seeking PhD positions and research roles.">
+<meta property="og:image" content="https://taznin-naher.github.io/assets/headshot.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#f7f5f0; --surface:#ffffff; --ink:#1d2b2a; --muted:#5b6b69; --line:#e2ddd3;
-  --accent:#1f6f78; --accent-soft:#e3f0ef; --rose:#d9577a;
+  --accent:#1f6f78; --accent-soft:#e3f0ef; --rose:#c94a6d; --rose-soft:#fbe9ee;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#0f1716; --surface:#16211f; --ink:#e7eeec; --muted:#9db0ad; --line:#26332f;
-    --accent:#5fb7bf; --accent-soft:#1a2e2d; --rose:#ef86a2;
+    --accent:#5fb7bf; --accent-soft:#1a2e2d; --rose:#ef86a2; --rose-soft:#2c1b21;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0f1716; --surface:#16211f; --ink:#e7eeec; --muted:#9db0ad; --line:#26332f;
-  --accent:#5fb7bf; --accent-soft:#1a2e2d; --rose:#ef86a2;
+  --accent:#5fb7bf; --accent-soft:#1a2e2d; --rose:#ef86a2; --rose-soft:#2c1b21;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
 a{color:var(--accent)}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
 nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
 nav .brand{font-family:Fraunces,serif;font-weight:600;font-size:1.15rem;color:var(--ink);text-decoration:none}
 nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:.92rem}
 nav ul a{color:var(--muted);text-decoration:none}
 nav ul a:hover{color:var(--accent)}
-@media (max-width:720px){nav ul{display:none}}
-header.hero{padding:72px 0 56px}
-.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
-.hero h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2.4rem,6vw,3.6rem);line-height:1.08;margin:0 0 12px}
-.hero .role{color:var(--accent);font-weight:600;margin:0 0 20px;letter-spacing:.02em}
-.hero p.lede{color:var(--muted);font-size:1.08rem;margin:0 0 28px;max-width:52ch}
+nav .cv{font-size:.88rem;font-weight:600;text-decoration:none;border:1.5px solid var(--accent);padding:6px 14px;border-radius:999px}
+@media (max-width:820px){nav ul{display:none}}
+
+header.hero{padding:64px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--rose-soft);color:var(--rose);font-weight:600;font-size:.85rem;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--rose)}
+.hero h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2.4rem,6vw,3.5rem);line-height:1.08;margin:0 0 14px}
+.hero .role{color:var(--accent);font-weight:600;margin:0 0 18px;font-size:1.05rem}
+.hero p.lede{color:var(--muted);font-size:1.07rem;margin:0 0 26px;max-width:56ch}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid var(--accent)}
 .btn.primary{background:var(--accent);color:var(--bg)}
@@ -47,42 +54,62 @@ header.hero{padding:72px 0 56px}
 .social a{color:var(--muted);text-decoration:none;border-bottom:1.5px solid var(--line);padding-bottom:2px}
 .social a:hover{color:var(--accent);border-color:var(--accent)}
 .photo{position:relative;justify-self:center}
-.photo img{width:100%;max-width:320px;aspect-ratio:1;object-fit:cover;border-radius:28px;display:block;box-shadow:0 20px 40px -20px rgba(0,0,0,.35)}
+.photo img{width:100%;max-width:310px;aspect-ratio:1;object-fit:cover;border-radius:28px;display:block;box-shadow:0 20px 40px -20px rgba(0,0,0,.35)}
 .photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--rose);border-radius:28px;z-index:-1}
-@media (max-width:720px){
-  header.hero{padding:40px 0}
+@media (max-width:760px){
+  header.hero{padding:36px 0}
   .hero .wrap{grid-template-columns:1fr;gap:36px}
   .photo{order:-1}
-  .photo img{max-width:220px}
+  .photo img{max-width:200px}
 }
-section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-family:Fraunces,serif;font-weight:600;font-size:1.9rem;margin:0 0 28px}
-h2 small{display:block;font-family:Inter,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:600;margin-bottom:6px}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:48px}
+.stats div{background:var(--surface);padding:18px 16px;text-align:center}
+.stats b{display:block;font-family:Fraunces,serif;font-size:1.8rem;font-weight:600;color:var(--accent);line-height:1.1}
+.stats span{font-size:.82rem;color:var(--muted)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:1.9rem;margin:0 0 10px}
+.eyebrow{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:600;margin-bottom:6px}
+.intro{color:var(--muted);max-width:66ch;margin:0 0 30px}
+
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media (max-width:820px){.grid3{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
-.card h3{margin:0 0 8px;font-size:1.05rem}
-.card p{margin:0;color:var(--muted);font-size:.95rem}
-.tl{position:relative;margin:0;padding:0;list-style:none}
+@media (max-width:820px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin:0 0 6px;font-size:1.1rem}
+.card .sub{color:var(--accent);font-size:.88rem;font-weight:600;margin:0 0 10px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.card ul{margin:0;padding-left:18px;color:var(--muted);font-size:.93rem}
+.card li{margin-bottom:6px}
+.card .num{font-family:Fraunces,serif;font-size:1.6rem;color:var(--rose);font-weight:600;line-height:1}
+
+.tl{margin:0;padding:0;list-style:none}
 .tl li{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:0 0 28px}
 .tl .when{color:var(--muted);font-size:.88rem;font-weight:500;padding-top:2px}
 .tl h3{margin:0;font-size:1.08rem}
 .tl .where{color:var(--accent);font-size:.93rem;margin:2px 0 6px;font-weight:500}
 .tl p{margin:0;color:var(--muted);font-size:.95rem}
+.tl .chips{margin-top:8px}
 @media (max-width:640px){.tl li{grid-template-columns:1fr;gap:4px}}
-.pubs h3{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:28px 0 12px}
+h3.group{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:8px 0 18px}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:500}
+
 .pubs ul{margin:0;padding-left:20px}
 .pubs li{margin-bottom:12px;font-size:.95rem}
-.pubs b{color:var(--ink)}
-.tag{display:inline-block;font-size:.72rem;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.chips span{background:var(--accent-soft);color:var(--accent);padding:5px 12px;border-radius:999px;font-size:.88rem;font-weight:500}
-.skillrow{margin-bottom:22px}
-.skillrow h3{margin:0;font-size:1rem}
-ul.plain{margin:0;padding-left:20px}
-ul.plain li{margin-bottom:10px}
+.pubs h3{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:28px 0 12px}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:999px;margin-left:4px;vertical-align:middle}
+
+.skillrow{margin-bottom:18px}
+.skillrow:last-child{margin-bottom:0}
+.skillrow h3{margin:0 0 8px;font-size:.98rem}
+.skillrow .chips span{font-size:.85rem;padding:4px 12px}
+
 .contact{text-align:center}
-.contact p{color:var(--muted);max-width:52ch;margin:0 auto 24px}
+.contact .intro{margin:0 auto 26px}
 footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 </style>
 </head>
@@ -91,23 +118,25 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 <nav><div class="wrap">
   <a class="brand" href="#top">Taznin Naher</a>
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research</a></li>
+    <li><a href="#focus">Expertise</a></li>
+    <li><a href="#bring">Why me</a></li>
+    <li><a href="#interests">PhD interests</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <a class="cv" href="assets/CV_Taznin_Naher.pdf" target="_blank" rel="noopener">CV</a>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div>
+    <span class="badge">Open to PhD positions &amp; research roles</span>
     <h1>Taznin Naher</h1>
-    <p class="role">Hydrologist · Water Resources Researcher</p>
-    <p class="lede">I study how rivers, estuaries and coastal landscapes respond to human change and a shifting climate. My work runs from a century of tidal records in the Delaware Estuary to farmers' decisions in Bangladesh's coastal polders.</p>
+    <p class="role">Remote Sensing · Agricultural Extension · Livelihood Research</p>
+    <p class="lede">I connect what satellites and field data show about land and water with what it means for the people who depend on them. Over ten years I have trained farmers, monitored rivers for a national research institute, modeled farmers' crop decisions, and used remote sensing to track landscape change.</p>
     <div class="btns">
       <a class="btn primary" href="assets/CV_Taznin_Naher.pdf" target="_blank" rel="noopener">Download CV</a>
-      <a class="btn ghost" href="mailto:naher.t@ufl.edu">Get in touch</a>
+      <a class="btn ghost" href="mailto:naher.t@ufl.edu">Email me</a>
     </div>
     <div class="social">
       <a href="https://scholar.google.com/citations?user=uNWVDvEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
@@ -115,112 +144,193 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
     </div>
   </div>
   <div class="photo"><img src="assets/headshot.jpeg" alt="Portrait of Taznin Naher"></div>
+</div>
+<div class="wrap" style="display:block">
+  <div class="stats">
+    <div><b>10+</b><span>years in water &amp; agriculture</span></div>
+    <div><b>3</b><span>graduate programs, 3 countries</span></div>
+    <div><b>39</b><span>Google Scholar citations</span></div>
+    <div><b>10+</b><span>papers, proceedings &amp; posters</span></div>
+  </div>
 </div></header>
 
-<section id="about"><div class="wrap">
-  <h2><small>About</small>From field to estuary</h2>
-  <p>I am completing an M.Sc. in Geology (Hydrological Sciences) at the University of Florida, where I work as a Graduate Research Assistant with the Megalopolitan Coastal Transformation Hub (MACH). My thesis looks at a century of tidal change in the Delaware Estuary: how dredging and other human modifications reshaped tidal harmonics, and what that means for flooding.</p>
-  <p>Before UF I spent six years as a Scientific Officer at the River Research Institute in Bangladesh, measuring river levels and bed elevations and writing technical reports on river training and bank protection. Earlier, as an Agricultural Engineer, I trained farmers in water-saving irrigation. I also studied Water Science and Engineering at IHE-Delft in the Netherlands as an Orange Knowledge Program scholar.</p>
-  <div class="grid3" style="margin-top:28px">
-    <div class="card"><h3>Estuarine hydrodynamics</h3><p>Tidal harmonic analysis, long-term water level records, and the effects of channel modification.</p></div>
-    <div class="card"><h3>Coastal climate risk</h3><p>Flood-relevant high-water duration, coastal resilience and adaptation in the Global South.</p></div>
-    <div class="card"><h3>Water &amp; livelihoods</h3><p>Decision tools for water management, crop choice and food security in coastal polders.</p></div>
+<section id="focus"><div class="wrap">
+  <span class="eyebrow">Areas of expertise</span>
+  <h2>Where my work sits</h2>
+  <p class="intro">My background spans four connected areas. Each one draws on work I have done and published.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>Remote sensing &amp; GIS</h3>
+      <p class="sub">Tracking land and water change from above</p>
+      <ul>
+        <li>Combined historical images and geospatial analysis to trace a century of landscape change in the Delaware Estuary (MACH, 2023–2026)</li>
+        <li>Mapped riverbank changes along the Brahmaputra River, Bangladesh (2023)</li>
+        <li>Analyzed dry- and wet-season surface water in Dau Tieng Lake, Vietnam (2024)</li>
+      </ul>
+      <div class="chips" style="margin-top:12px"><span>Google Earth Engine</span><span>ArcGIS Pro</span><span>QGIS</span></div>
+    </div>
+    <div class="card">
+      <h3>Agricultural extension &amp; education</h3>
+      <p class="sub">Bringing technology to farmers</p>
+      <ul>
+        <li>As Agricultural Engineer with the Department of Agricultural Extension, trained farmers in drip, sprinkler and buried-pipe irrigation (2015–2017)</li>
+        <li>Shared career paths in climate science with community college students (Philadelphia Climate Career Panel, 2025)</li>
+        <li>Public seminar on climate adaptation across the Global South (Montclair State University, 2023)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Livelihoods &amp; human dimensions</h3>
+      <p class="sub">How water and climate shape people's choices</p>
+      <ul>
+        <li>Built a decision-making model of how coastal farmers choose crops, and its effect on their livelihoods (M.Sc. thesis, BUET)</li>
+        <li>Developed a livelihood security index for farmers in coastal Bangladesh (ICWFM-2017)</li>
+        <li>Co-authored work on food security in storm-surge-prone coastal polders, my most-cited paper</li>
+        <li>Studied how water management practices affect farmer livelihoods in lowland areas</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Water resources &amp; climate risk</h3>
+      <p class="sub">The physical systems behind it all</p>
+      <ul>
+        <li>Six years as Scientific Officer at the River Research Institute, monitoring water levels and riverbeds</li>
+        <li>Tidal change and flood risk in the Delaware Estuary (M.Sc. thesis, University of Florida)</li>
+        <li>Climate change impacts on crop water demand for boro rice</li>
+      </ul>
+      <div class="chips" style="margin-top:12px"><span>MIKE11</span><span>AquaCrop</span><span>CROPWAT</span></div>
+    </div>
   </div>
 </div></section>
 
-<section id="research"><div class="wrap">
-  <h2><small>Research</small>Research experience</h2>
-  <ul class="tl">
-    <li><div class="when">Aug 2023 – May 2026</div><div>
-      <h3>Graduate Research Assistant</h3>
-      <div class="where">The Megalopolitan Coastal Transformation Hub (MACH)</div>
-      <p>Combined historical image interpretation with geospatial analysis to trace how human modifications changed the Delaware Estuary landscape. <a href="https://coastalhub.org/mach-focus-areas/coastal-climate-risk/historical-change-delaware-estuary/" target="_blank" rel="noopener">Project page</a></p>
-    </div></li>
-    <li><div class="when">May 2013 – Apr 2015</div><div>
-      <h3>IDRC–South Asian Water (SAWA) Fellow</h3>
-      <div class="where">Institute of Water and Flood Management, BUET</div>
-      <p>Researched agro-ecosystems and climate adaptation strategies in coastal Bangladesh.</p>
-    </div></li>
-  </ul>
+<section id="bring"><div class="wrap">
+  <span class="eyebrow">For recruiters &amp; advisors</span>
+  <h2>What I bring to a team</h2>
+  <p class="intro">I have worked as a government field officer, an engineer and a graduate researcher, so I am comfortable both in a village meeting and with a dataset.</p>
+  <div class="grid3">
+    <div class="card"><div class="num">01</div><h3 style="margin-top:10px">Field experience with communities</h3><p>Years of hands-on work with farmers and local stakeholders in Bangladesh: training, surveys and extension. I know how to collect data from people respectfully and turn it into findings.</p></div>
+    <div class="card"><div class="num">02</div><h3 style="margin-top:10px">Mixed-methods research</h3><p>I pair quantitative tools (R, Python, MATLAB, GIS, crop and river models) with livelihood and decision-making studies. That combination suits social-ecological research.</p></div>
+    <div class="card"><div class="num">03</div><h3 style="margin-top:10px">International &amp; interdisciplinary</h3><p>Graduate training in Bangladesh, the Netherlands and the US; research within MACH, a multi-university coastal hub; competitive fellowships from IDRC and the Orange Knowledge Program.</p></div>
+  </div>
+</div></section>
+
+<section id="interests"><div class="wrap">
+  <span class="eyebrow">Looking ahead</span>
+  <h2>Questions I want to pursue in a PhD</h2>
+  <p class="intro">I am looking for a lab working where remote sensing, agriculture and people meet. Topics I would be excited to work on:</p>
+  <div class="grid2">
+    <div class="card"><h3>Remote sensing for smallholder agriculture</h3><p>Using satellite data to monitor crops, water and land use, and making those insights useful for farmers and extension services.</p></div>
+    <div class="card"><h3>Extension that works</h3><p>How farmers adopt climate-smart and water-saving practices, and how extension and education programs can do better.</p></div>
+    <div class="card"><h3>Livelihood vulnerability &amp; resilience</h3><p>Measuring how climate shocks, floods and land change affect household livelihoods and food security.</p></div>
+    <div class="card"><h3>Linking Earth observation with human data</h3><p>Combining geospatial data with household surveys to see where environmental change hits people hardest.</p></div>
+  </div>
 </div></section>
 
 <section id="experience"><div class="wrap">
-  <h2><small>Career</small>Work &amp; education</h2>
+  <span class="eyebrow">Career</span>
+  <h2>Experience</h2>
+  <p class="intro">From frontline extension work to national river monitoring to graduate research in the US.</p>
   <ul class="tl">
+    <li><div class="when">Aug 2023 – May 2026</div><div>
+      <h3>Graduate Research Assistant</h3>
+      <div class="where">Megalopolitan Coastal Transformation Hub (MACH), USA</div>
+      <p>Combined historical image interpretation with geospatial analysis to trace how human modifications changed the Delaware Estuary landscape. <a href="https://coastalhub.org/mach-focus-areas/coastal-climate-risk/historical-change-delaware-estuary/" target="_blank" rel="noopener">Project page</a></p>
+      <div class="chips"><span>Remote sensing</span><span>Historical imagery</span><span>GIS</span></div>
+    </div></li>
     <li><div class="when">Jun 2017 – Jul 2023</div><div>
       <h3>Scientific Officer</h3>
       <div class="where">River Research Institute (RRI), Faridpur, Bangladesh</div>
-      <p>Measured water level and riverbed level data and prepared technical reports.</p>
+      <p>Measured water levels and riverbed levels and prepared technical reports, including studies on dredging alignment and riverbank protection.</p>
+      <div class="chips"><span>Field monitoring</span><span>Technical reporting</span></div>
     </div></li>
     <li><div class="when">Feb 2015 – Jun 2017</div><div>
       <h3>Agricultural Engineer</h3>
       <div class="where">Department of Agricultural Extension, Munshiganj, Bangladesh</div>
-      <p>Trained farmers in water-saving technologies: drip and sprinkler irrigation and buried pipe systems.</p>
+      <p>Trained farmers in water-saving technologies: drip and sprinkler irrigation and buried-pipe systems.</p>
+      <div class="chips"><span>Agricultural extension</span><span>Farmer training</span></div>
     </div></li>
-    <li><div class="when">Jan 2025 – May 2026</div><div>
+    <li><div class="when">May 2013 – Apr 2015</div><div>
+      <h3>IDRC–South Asian Water (SAWA) Fellow</h3>
+      <div class="where">Institute of Water and Flood Management, BUET</div>
+      <p>Researched agro-ecosystems, livelihoods and climate adaptation in coastal Bangladesh.</p>
+      <div class="chips"><span>Livelihoods</span><span>Climate adaptation</span></div>
+    </div></li>
+  </ul>
+
+  <h3 class="group" style="margin-top:20px">Education</h3>
+  <ul class="tl">
+    <li><div class="when">2025 – 2026</div><div>
       <h3>M.Sc. in Geology (Hydrological Sciences)</h3>
-      <div class="where">University of Florida, Gainesville</div>
+      <div class="where">University of Florida, USA</div>
       <p>Thesis: A Century of Tidal Change in the Delaware Estuary: Anthropogenic Modification, Harmonic Response, and Flood Implications.</p>
     </div></li>
-    <li><div class="when">Oct 2019 – Apr 2021</div><div>
+    <li><div class="when">2019 – 2021</div><div>
       <h3>Graduate Study in Water Science and Engineering</h3>
       <div class="where">IHE-Delft Institute for Water Education, the Netherlands</div>
+      <p>Orange Knowledge Program scholar.</p>
     </div></li>
-    <li><div class="when">Apr 2013 – Sep 2016</div><div>
+    <li><div class="when">2013 – 2016</div><div>
       <h3>M.Sc. in Water Resources Development</h3>
       <div class="where">Bangladesh University of Engineering and Technology (BUET)</div>
       <p>Thesis: Crop Decision Making Model and Impacts of Crop Selection on the Livelihood of Farmers in Coastal Areas.</p>
     </div></li>
-    <li><div class="when">Feb 2009 – Dec 2012</div><div>
+    <li><div class="when">2009 – 2012</div><div>
       <h3>B.Sc. in Agricultural Engineering (Irrigation &amp; Water Management)</h3>
-      <div class="where">Bangladesh Agricultural University (BAU), Mymensingh</div>
-      <p>Project: Physical Simulation of Rainfall-Runoff System by a Hydrology Bench.</p>
+      <div class="where">Bangladesh Agricultural University (BAU)</div>
+      <p>Technical Merit Scholarship.</p>
     </div></li>
   </ul>
 </div></section>
 
 <section id="publications" class="pubs"><div class="wrap">
-  <h2><small>Output</small>Publications &amp; presentations</h2>
-  <p style="color:var(--muted);margin:-12px 0 0">Full list and citations on <a href="https://scholar.google.com/citations?user=uNWVDvEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  <span class="eyebrow">Research output</span>
+  <h2>Publications &amp; presentations</h2>
+  <p class="intro">Full list and citation counts on <a href="https://scholar.google.com/citations?user=uNWVDvEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
   <h3>Journal articles</h3>
   <ul>
     <li>Kadir, M. N., Lorenzo-Trueba, J., <b>Naher, T.</b>, Talke, S. A., Wahl, T., &amp; Dangendorf, S. (2026). A Century of Tidal Transformation in the Delaware Estuary: Anthropogenic Modification, Nonlinear Harmonic Response, and Flood-Relevant High-Water Duration. <span class="tag">Under review</span></li>
+    <li><b>Naher, T.</b>, Nabir, M. N., &amp; Kadir, M. N. (2024). A comprehensive analysis of surface water changes in Dau Tieng Lake, Vietnam, across dry and wet seasons. <i>GSC Advanced Research and Reviews</i>, 18(1), 138–149. <span class="tag">Remote sensing</span></li>
+    <li>Kadir, M. N., <b>Naher, T.</b>, &amp; Nabir, M. N. (2023). A Comprehensive Study on River Bank Dynamics of the Brahmaputra River in Bangladesh. <i>International Journal of Advances in Engineering and Management</i>, 5. <span class="tag">Remote sensing</span></li>
     <li>Ashrafuzzaman, A. K. M., Das, S. K., Moududi, M. A. A., <b>Naher, T.</b>, Ghosh, S. K., &amp; Kanungoe, P. (2020). A Study on the Optimization of Dredging Alignment, Proposed River Training and Bank Protection Works around Jajira-Naria. <i>Tech. J. River Res. Inst.</i>, 15(1), 129–139.</li>
-    <li>Kibria, M. G., Saha, D., Kabir, T., <b>Naher, T.</b>, Maliha, S., &amp; Mondal, M. S. (2015). Achieving Food Security in Storm Surge-prone Coastal Polders of South-West Bangladesh. <i>SAWAS Journal</i>, 5(1), 26–43.</li>
+    <li>Kibria, M. G., Saha, D., Kabir, T., <b>Naher, T.</b>, Maliha, S., &amp; Mondal, M. S. (2015). Achieving Food Security in Storm Surge-prone Coastal Polders of South-West Bangladesh. <i>SAWAS Journal</i>, 5(1), 26–43. <span class="tag">Livelihoods</span></li>
+    <li>Kadir, M. N., <b>Naher, T.</b>, &amp; Khan, M. H. (2014). Physical Simulation of Rainfall-Runoff System by a Hydrology Bench. <i>International Journal of Engineering, Sciences, and Technologies</i>, 1(1), 1–4.</li>
   </ul>
+
   <h3>Conference proceedings</h3>
   <ul>
-    <li><b>Naher, T.</b>, Saleh, A. F. M., &amp; Khan, M. S. A. (2017). Development of livelihood security index for farmers in the coastal area of Bangladesh. 6th International Conference on Water &amp; Flood Management (ICWFM-2017), BUET.</li>
-    <li><b>Naher, T.</b>, &amp; Saleh, A. F. M. (2015). Farmers' decision-making model for growing sesame and sunflower in coastal Bangladesh. 5th International Conference on Water &amp; Flood Management (ICWFM-2015), BUET.</li>
+    <li><b>Naher, T.</b>, Saleh, A. F. M., &amp; Khan, M. S. A. (2017). Development of livelihood security index for farmers in the coastal area of Bangladesh. 6th International Conference on Water &amp; Flood Management (ICWFM-2017), BUET. <span class="tag">Livelihoods</span></li>
+    <li><b>Naher, T.</b>, &amp; Saleh, A. F. M. (2015). Farmers' decision-making model for growing sesame and sunflower in coastal Bangladesh. ICWFM-2015, BUET. <span class="tag">Livelihoods</span></li>
+    <li><b>Naher, T.</b>, &amp; Kadir, M. N. (2015). Impacts of water management practices on livelihood of farmers in a lowland area of Bangladesh. ICWFM-2015, BUET. <span class="tag">Livelihoods</span></li>
+    <li>Rahman, M. A., Karim, N. N., Kadir, M. N., &amp; <b>Naher, T.</b> (2015). Impacts of climate change on crop coefficient and reference crop evapotranspiration of boro rice in north-east hydrological region of Bangladesh. ICWFM-2015, 345–350.</li>
   </ul>
+
   <h3>Posters</h3>
   <ul>
     <li><b>Naher, T.</b>, &amp; Kadir, M. N. (2026). Adaptive Decision Tool for Sustainable Water Management in the Old Brahmaputra River, Bangladesh. 10th Biennial UF Water Institute Symposium, Gainesville, FL.</li>
     <li>Kadir, M. N., <b>Naher, T.</b>, Lorenzo-Trueba, J., Talke, S. A., Wahl, T., Dangendorf, S., &amp; Lee, S. B. (2025). Localized Decline in Tidal Overtides Reveals Anthropogenic Smoothing of the Delaware Estuary. AGU Fall Meeting 2025, New Orleans, LA.</li>
   </ul>
-  <h3>Invited talks</h3>
+
+  <h3>Invited talks &amp; outreach</h3>
   <ul>
-    <li>Philadelphia Climate Career Panel, October 29, 2025. Shared academic and career perspectives with community college students interested in climate science.</li>
+    <li>Philadelphia Climate Career Panel, October 2025. Shared academic and career perspectives with community college students interested in climate science.</li>
     <li>Ignite Talk, MACH Annual Meeting, Rutgers University, June 2024.</li>
-    <li>Climate Change Adaptations Across the Global South, Sustainability Seminar Series, Montclair State University, December 4, 2023.</li>
-  </ul>
-  <h3>Professional development</h3>
-  <ul>
-    <li>MACH Summer Session 2026: Exploring Research, Decisions, and Real-World Impact, Pendle Hill, Pennsylvania, July 8–10, 2026. Interdisciplinary discussions on coastal resilience, stakeholder engagement, policy briefs and decision-making.</li>
+    <li>Climate Change Adaptations Across the Global South, Sustainability Seminar Series, Montclair State University, December 2023.</li>
+    <li>MACH Summer Session 2026, Pendle Hill, PA: interdisciplinary work on coastal resilience, stakeholder engagement and policy briefs.</li>
   </ul>
 </div></section>
 
 <section id="skills"><div class="wrap">
-  <h2><small>Toolkit</small>Skills &amp; honors</h2>
-  <div class="grid3">
+  <span class="eyebrow">Toolkit</span>
+  <h2>Skills &amp; honors</h2>
+  <div class="grid3" style="margin-top:24px">
     <div class="card" style="grid-column:span 2">
-      <div class="skillrow"><h3>Programming</h3><div class="chips"><span>R</span><span>Python</span><span>MATLAB</span></div></div>
-      <div class="skillrow"><h3>Geospatial</h3><div class="chips"><span>QGIS</span><span>ArcGIS</span><span>ArcGIS Pro</span><span>Google Earth Engine</span></div></div>
-      <div class="skillrow" style="margin:0"><h3>Modeling &amp; analysis</h3><div class="chips"><span>MIKE11</span><span>AquaCrop</span><span>CROPWAT 8.0</span><span>JMP Pro 18</span><span>GeoDa</span></div></div>
+      <div class="skillrow"><h3>Remote sensing &amp; GIS</h3><div class="chips"><span>Google Earth Engine</span><span>ArcGIS Pro</span><span>ArcGIS</span><span>QGIS</span><span>Historical image interpretation</span></div></div>
+      <div class="skillrow"><h3>Data analysis &amp; programming</h3><div class="chips"><span>R</span><span>Python</span><span>MATLAB</span><span>JMP Pro 18</span><span>GeoDa</span></div></div>
+      <div class="skillrow"><h3>Crop &amp; water modeling</h3><div class="chips"><span>AquaCrop</span><span>CROPWAT 8.0</span><span>MIKE11</span></div></div>
+      <div class="skillrow"><h3>Social &amp; field research</h3><div class="chips"><span>Livelihood assessment</span><span>Farmer decision modeling</span><span>Farmer training</span><span>Stakeholder engagement</span><span>Technical reporting</span></div></div>
     </div>
     <div class="card">
       <h3>Honors &amp; awards</h3>
-      <ul class="plain" style="color:var(--muted);font-size:.93rem;margin-top:10px">
+      <ul style="margin-top:10px">
         <li>Orange Knowledge Program (OKP) Scholarship, the Netherlands</li>
         <li>IDRC–SAWA Fellowship, BUET</li>
         <li>Technical Merit Scholarship, BAU</li>
@@ -232,17 +342,19 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
-  <h2><small>Contact</small>Let's talk</h2>
-  <p>I'm open to research collaborations and roles in hydrology, coastal resilience and water resources management.</p>
+  <span class="eyebrow">Get in touch</span>
+  <h2>Let's work together</h2>
+  <p class="intro">If you lead a lab or team working on remote sensing, agricultural extension, or livelihoods and climate, I would love to hear about openings. My CV has full details.</p>
   <div class="btns" style="justify-content:center">
     <a class="btn primary" href="mailto:naher.t@ufl.edu">naher.t@ufl.edu</a>
     <a class="btn ghost" href="mailto:tnaher.fl@gmail.com">tnaher.fl@gmail.com</a>
   </div>
-  <div class="social" style="justify-content:center;margin-top:20px">
+  <div class="social" style="justify-content:center;margin-top:22px">
     <a href="https://scholar.google.com/citations?user=uNWVDvEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
     <a href="https://www.linkedin.com/in/taznin-naher-583b1788/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="assets/CV_Taznin_Naher.pdf" target="_blank" rel="noopener">CV (PDF)</a>
   </div>
-  <p style="margin-top:20px">Based in Florida, US</p>
+  <p style="margin-top:20px;color:var(--muted)">Based in Florida, US</p>
 </div></section>
 
 <footer>© 2026 Taznin Naher</footer>
